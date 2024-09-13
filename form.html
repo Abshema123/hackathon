@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Form</title>
+    <link rel="stylesheet" href="form.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+    <form action="#" method="post">
+        <!-- Username input -->
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username">
+        <!-- Password input -->
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <small>Your password is between 4 and 12 characters</small>
+        <!-- Input Text Label input -->
+        <label for="inputText">Input Text Label</label>
+        <div class="input-style error-exclamation">
+            <input type="text" id="inputText" value="Typing ">
+            <span><svg class="error-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg></span>
+        </div>
+        <small class="message-style">Error message informing me of a problem</small>
+        <!-- checkbox and content -->
+        <label for="checkbox">
+            <input type="checkbox" id="rememberMe">
+            Remember me
+        </label>
+        <!-- toggle box for switch off -->
+        <div class="off-box">
+            <div class="off-box-1">
+                <span class="off-box-2"></span>
+            </div>
+            <span class="off-style">Off</span>
+        </div>
+        <!-- Radio button and it's content -->
+        <label for="radio">
+            <input type="radio" name="radio" value="1">Radio selection 1
+        <label>
+            <input type="radio" name="radio" value="2" checked>Radio selection 2
+        </label>
+        <label>
+            <input type="radio" name="radio" value="3">Radio selection 3
+        </label>
+
+        <label for="dropdown">Dropdown Title</label>
+        <!-- selection part -->
+        <select id="dropdown">
+            <option value="Dropdown option">Dropdown option</option>
+            <option value="Dropdown option 1">Dropdown option 1</option>
+            <option value="Dropdown option 2">Dropdown option 2</option>
+        </select>
+        <!-- Buttons for submission -->
+        <div class="buttons">
+            <button type="button" class="cancel-style">Cancel</button>
+            <button type="submit" class="submit-style">Next</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

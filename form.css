@@ -171,3 +171,13 @@ select {
 .submit-style:hover {
     background-color: rgb(56, 56, 212);
 }
+@media only screen and (max-width: 768px){
+    .container{
+        margin: 5% 10%;
+        width: auto;
+    }
+    form{
+        margin: 5% 10%;
+        width: auto;
+    }
+}
